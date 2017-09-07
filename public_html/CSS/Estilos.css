@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06/09/2017, 05:38:19 PM
+    Author     : Oscar
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#encabezado{
+    position: relative; top: -20px;
+    background-color: #185B0E;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 110px;
+}
+
+#encabezado h3{
+    position:relative; right: -80%; top: 15%;
+    color: #8D0AAA;
+    font-size: 3em;
+    font-family: 'Satisfy', cursive;
+}
+#navBar{
+    position: relative; top: -50px;
+    width: 100%
+}
+#menuLogSign button{
+    margin-top: 3%;
+    left: -10%;
+}
