@@ -18,17 +18,25 @@ and open the template in the editor.
     background-color: #185B0E;
     padding-left: 0px;
     padding-right: 0px;
-    height: 140px;
+    height: 160px;
 }
 
-#encabezado h3{
-    position:relative; right: -13%; top: 20%;
+#encabezado h1{
+    position:relative; right: -5%; top: 30%;
     color: white;
     font-size: 3em;
     font-family: 'Satisfy', cursive;
+    font-size: 60px;
 }
+
+#encabezado img{
+    position: absolute; top: 15%; right: 15%;
+    width: 8%;
+    height: 70%;
+}
+
 #navBar{
-    position: relative; top: -50px;
+    position: relative; top: -20px;
     width: 100%
 }
 #menuLogSign button{
@@ -37,12 +45,77 @@ and open the template in the editor.
 }
 
 .banner{
-    position: relative; top: -20px;
-    left: 0;
+    position: relative; top: -40px;
+
     height: 300px;
     width: 100%;
 }
-  .carousel-inner > .item > img{
-      width: 100%;
-      height: 300px;
-  }
+.carousel-inner > .item > img{
+    width: 100%;
+    height: 300px;
+}
+
+#myModalRegistro{
+    text-align: center;
+    color: white;
+}
+.fondoForm{
+    background: #185B0E;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.modal-body{
+    text-align: center;
+    color: #00394d;
+}
+
+#myModalIngreso{
+    text-align: center;
+}
+
+.colorBlanco{
+    color: white;
+}
+
+.userIngreso{
+    position: relative;
+    width: 30%;
+    height: 30%;
+}
+#mesajeLogin{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contenedorLugares{
+    font-family: 'Lobster', cursive;
+    margin-left: 5%;
+    color:seagreen;
+}
+
+#contenedorLugares li{
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    width: 18%;
+    color:#00394d;
+}
+
+#contenedorLugares a{
+    color:#00394d;
+    text-decoration:none;
+}
+
+#contenedorLugares img{
+    width: 200px;
+    height: 150px;
+}
+
+@media screen and (min-width: 1000px) {
+.custom-collapse .collapse{
+            display:block;
+      }
+}
