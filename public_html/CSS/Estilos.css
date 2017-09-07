@@ -126,3 +126,19 @@ and open the template in the editor.
     width: 4%;
     height: 40%;
 }
+/* ***********************************************Contacto******************************************* */
+.oficinas{
+    position: relative; top:0; left:19%; 
+    color:#345CEF;
+    width: 100px;
+    font-family: fantasy;
+}
+  .mapa{
+    margin-left: 5%;
+}
+.contacto{
+    width:400px;
+    height:0;
+    position: relative; top:-350px; left: 50%;
+    
+}
