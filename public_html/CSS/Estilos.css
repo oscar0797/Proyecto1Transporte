@@ -30,9 +30,9 @@ and open the template in the editor.
 }
 
 #encabezado img{
-    position: absolute; top: 15%; right: 15%;
-    width: 8%;
-    height: 70%;
+    position: absolute; top: 10%; right: 1%;
+    width: 9%;
+    height: 80%;
 }
 
 #navBar{
@@ -40,7 +40,7 @@ and open the template in the editor.
     width: 100%
 }
 #menuLogSign button{
-    margin-top: 3%;
+    margin-top: 0%;
     left: -10%;
 }
 
@@ -91,9 +91,9 @@ and open the template in the editor.
 }
 
 #contenedorLugares{
-    font-family: 'Lobster', cursive;
+    font-family: fantasy;
     margin-left: 5%;
-    color:seagreen;
+    color:#345CEF;
 }
 
 #contenedorLugares li{
@@ -102,10 +102,12 @@ and open the template in the editor.
     position: relative;
     width: 18%;
     color:#00394d;
+    background: #E1FAEC;
+    font-family: fantasy;
 }
 
 #contenedorLugares a{
-    color:#00394d;
+    color:#185B0E;
     text-decoration:none;
 }
 
@@ -114,8 +116,13 @@ and open the template in the editor.
     height: 150px;
 }
 
-@media screen and (min-width: 1000px) {
-.custom-collapse .collapse{
-            display:block;
-      }
+#anchodiv{
+    height: 100px;
+    background: red;
+    position:relative; top:300px;
+}
+#pie img{
+    position: absolute; top: 0%; right: 96%;
+    width: 4%;
+    height: 40%;
 }
