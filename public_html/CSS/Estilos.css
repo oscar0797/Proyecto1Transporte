@@ -18,12 +18,12 @@ and open the template in the editor.
     background-color: #185B0E;
     padding-left: 0px;
     padding-right: 0px;
-    height: 110px;
+    height: 140px;
 }
 
 #encabezado h3{
-    position:relative; right: -80%; top: 15%;
-    color: #8D0AAA;
+    position:relative; right: -13%; top: 20%;
+    color: white;
     font-size: 3em;
     font-family: 'Satisfy', cursive;
 }
