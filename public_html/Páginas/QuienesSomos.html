@@ -6,11 +6,168 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Quienes somos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link href="../CSS/Estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
+    <body class="bg-muted">
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="myModalTitle">Modal Header</h4>
+                    </div>
+                    <div class="modal-body" id="myModalMessage">
+                        <p>This is a small modal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="encabezado">
+            <h1>Trans~Por~Tico</h1>           
+            <img class="img-circle" src="../Imágenes/Inicio/mundo.gif" alt=""/>            
+        </div>
+
+        <!-- ********************************************************** -->
+        <!-- MENU -->
+        <!-- ********************************************************** -->
+
+        <div id="navBar">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Desplegar navegación</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse img-responsive">
+                    <ul class="nav navbar-nav">                        
+                        <li class="active"><a href="Inicio.html" class="btn-lg glyphicon glyphicon-home"><b>_Inicio</b></a></li>
+                        <li><a class=" btn-lg glyphicon" href="QuienesSomos.html">Quiénes Somos</a></li>
+                        <li><a class="btn-lg glyphicon" href="Contacto.html">Contacto</a></li>
+                    </ul>
+                    <div class="nav navbar-nav navbar-right" id="menuLogSign">
+                        <button type="button" class="btn-lg btn-primary glyphicon glyphicon-user" data-toggle="modal" data-target="#myModalRegistro"> Registrarse</button>
+                        <button type="button" class="btn-lg btn-primary glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModalIngreso"> Entrar</button>
+                    </div>
+                </div>
+            </nav> <!--Navbar-->
+        </div>
+
+
+
+        <!-- ********************************************************** -->
+        <!-- informacion -->
+        <!-- ********************************************************** -->
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="div_verde">
+                        <h2 id="myModalRegistro" >
+                            Vision
+                        </h2>
+                    </div>
+                    <p>
+                        Ser lideres a nivel mundial en el servicio de transporte
+                        , asi como ofrecer las mejores tarifas.
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+                    <div id="div_verde">
+                        <h2 id= "myModalRegistro">
+                            Mision
+                        </h2>
+                    </div>
+                    <p>
+                        Transportar a las personas y contribuir a la integracion y al desarrollo
+                        economico y social de los paises.
+                    </p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" >
+                    <img id="centroImg" class="img-rounded" src="../Imágenes/Inicio/waze.jpg" alt=""/>
+                </div>
+                <div class="col-md-4">
+                    <div id="div_verde">
+                        <h2 id="myModalRegistro">
+                            Quienes somos
+                        </h2>
+                    </div>
+                    <p>
+                        Trans por tico, nace con la clara vocacion de dar el
+                        mejor servicio a nuestros clientes.La gestacion del proyecto
+                        es fruto de meses de trabajo, de horas pensando en las nesecidades
+                        de nuestros clientes. Y asi ofrecerle una pagina fresca y sencilla
+                        que cumpla con las nesecidades de nuestros clientes.
+                    </p>
+
+                </div>
+                <div class="col-md-4">
+                    <img  id="centroImg" class="img-rounded" src="../Imágenes/Inicio/calle.jpg" alt=""/>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="div_verde">
+                        <h2 id="myModalRegistro">
+                            De donde venimos
+                        </h2>
+                    </div>
+                    <p>
+                        Nuestra esperencia en el sector nos a llevado a arrancar
+                        este nuevo proyecto, en el cual participamos profecionales
+                        con una gran experencia en atencion al cliente. 
+                    </p>
+
+                </div>
+                <div class="col-md-4">
+                    <div id="div_verde">
+                        <h2 id="myModalRegistro">
+                            A donde vamos 
+                        </h2>
+                    </div>
+                    <p>
+                        Nuestra meta es, conseguir que nuestros clientes 
+                        adocten y se familiaricen con las nuevas tecnologias 
+                        de informacion y vea la nesecida de usar estas nuevas 
+                        tecnologias para solicitar servicios de trasporte de 
+                        la forma mas facil.
+                    </p>
+
+                </div>
+                <div class="col-md-4">
+                    <div id="div_verde">
+                        <h2 id="myModalRegistro">
+                            Como lo hacemos
+                        </h2>
+                    </div>
+                    <p>
+                        Trans por tico cuenta con un sistema que le permite al usuario pedir un 
+                        auto para que lo lleven su destino de una forma segura y barata.
+                    </p>
+
+                </div>
+            </div>
+        </div>
     </body>
 </html>

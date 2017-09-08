@@ -21,12 +21,28 @@ and open the template in the editor.
     height: 160px;
 }
 
+#div_verde{
+    position: relative; top: -20px;
+    background-color: #185B0E;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 70px;
+}
+
 #encabezado h1{
     position:relative; right: -5%; top: 30%;
     color: white;
     font-size: 3em;
     font-family: 'Satisfy', cursive;
     font-size: 60px;
+}
+
+#div_verde h2{
+    position: relative; right: -5%; top: 30%;
+    color: white;
+    font-size: 3em;
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
 }
 
 #encabezado img{
@@ -79,6 +95,7 @@ and open the template in the editor.
     color: white;
 }
 
+
 .userIngreso{
     position: relative;
     width: 30%;
@@ -126,6 +143,17 @@ and open the template in the editor.
     width: 4%;
     height: 40%;
 }
+
+#centroImg{    
+    left:0;
+    right:0;
+    margin-left:75px;
+    margin-right:auto;
+    height: 200px;
+    width: 300px;
+    
+}
+
 /* ***********************************************Contacto******************************************* */
 .oficinas{
     position: relative; top:0; left:19%; 
