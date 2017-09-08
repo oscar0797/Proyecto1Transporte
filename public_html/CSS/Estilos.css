@@ -31,7 +31,7 @@ and open the template in the editor.
 
 #encabezado img{
     position: absolute; top: 10%; right: 1%;
-    width: 9%;
+    width: 8.5%;
     height: 80%;
 }
 
@@ -82,7 +82,7 @@ and open the template in the editor.
 .userIngreso{
     position: relative;
     width: 30%;
-    height: 30%;
+    height: 20%;
 }
 #mesajeLogin{
     width: 90%;
