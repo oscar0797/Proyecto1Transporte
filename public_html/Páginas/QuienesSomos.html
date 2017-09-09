@@ -16,9 +16,7 @@ and open the template in the editor.
 
         <link href="../CSS/Estilos.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
     <body class="bg-muted">
-
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
@@ -54,10 +52,10 @@ and open the template in the editor.
                     </button>
                 </div>
                 <div class="collapse navbar-collapse navbar-ex1-collapse img-responsive">
-                    <ul class="nav navbar-nav">                        
-                        <li class="active"><a href="Inicio.html" class="btn-lg glyphicon glyphicon-home"><b>_Inicio</b></a></li>
+                    <ul class="nav navbar-nav"> 
+                        <li><a href="Inicio.html" class="btn-lg glyphicon glyphicon-home">_Inicio</a></li>
                         <li><a class=" btn-lg glyphicon" href="QuienesSomos.html">Quiénes Somos</a></li>
-                        <li><a class="btn-lg glyphicon" href="Contacto.html">Contacto</a></li>
+                        <li class="active"><a class="btn-lg glyphicon" href="Contacto.html"><b>Contacto</b></a></li>
                     </ul>
                     <div class="nav navbar-nav navbar-right" id="menuLogSign">
                         <button type="button" class="btn-lg btn-primary glyphicon glyphicon-user" data-toggle="modal" data-target="#myModalRegistro"> Registrarse</button>
@@ -67,8 +65,134 @@ and open the template in the editor.
             </nav> <!--Navbar-->
         </div>
 
+        <!-- ********************************************************** -->
+        <!-- MODAL FORMULARIO REGISTRO -->
+        <!-- ********************************************************** -->
+        <div class="container">
+            <div class="modal fade" id="myModalRegistro" role="dialog">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header fondoForm">
+                            <button class="close btn-danger" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+                            <h1 class="modal-title" id="myModalTitle"><b>Registro de Usuario</b></h1>
+                        </div>
+                        <div class="modal-body" id="myModalMessage">
+                            <form role="form" onsubmit="return false;" id="formRegistro">
+                                <div class="form-group col-sm-12" id="groupUsuario">
+                                    <label for="usuario">Nombre de Usuario:</label>
+                                    <input type="text" class="form-control" id="usuarioSign" autofocus="autofocus" placeholder="Nombre de Usuario">
+                                </div>
+                                <div class="form-group col-sm-6" id="groupPassword">
+                                    <label for="password">Contraseña:</label>
+                                    <input type="text" class="form-control" id="passwordSign" autofocus="autofocus" placeholder="Contraseña">
+                                </div>                                
+                                <div class="form-group col-sm-6" id="groupPasswordConfirm">
+                                    <label for="password">Confirmar Contraseña:</label>
+                                    <input type="password" class="form-control" id="passwordConfirmSign" autofocus="autofocus" placeholder="Contrasena">
+                                </div>                                
+                                <div class="form-group col-sm-4" id="groupNombre">
+                                    <label for="usuario">Nombre:</label>
+                                    <input type="text" class="form-control" id="nombreSign" placeholder="Nombre" >
+                                </div>
+                                <div class="form-group col-sm-4" id="groupApellido1">
+                                    <label for="usuario">Apellido1:</label>
+                                    <input type="text" class="form-control" id="apellido1Sign" placeholder="Apellido1">
+                                </div>
+                                <div class="form-group col-sm-4" id="groupApellido2">
+                                    <label for="apellido2">Apellido2:</label>
+                                    <input type="text" class="form-control" id="apellido2Sign" placeholder="Apellido2">
+                                </div>
+                                <div class="form-group col-sm-6" id="groupCorreo">
+                                    <label for="password">Email</label>
+                                    <input type="email" class="form-control" id="correoSign" autofocus="autofocus" placeholder="Email">
+                                </div>
+                                <div class="form-group col-sm-6" id="groupTelefono">
+                                    <label for="password">Teléfono:</label>
+                                    <input type="text" class="form-control" id="telefonoSing" autofocus="autofocus" placeholder="Teléfono">
+                                </div>
+                                <div class="form-group col-sm-6" id="groupFechaNacimiento">
+                                    <label for="nac">Fecha de Nacimiento:</label>
+                                    <div id="fechaNacimiento" class="input-group date form_date" data-date="" data-date-format="dd/mm/yyyy" data-link-field="dtp_input2" data-link-format="dd/mm/yyyy">
+                                        <input class="form-control" type="text" value="" readonly placeholder="dd/mm/aaaa" id="fechaNacimientoSing">
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>                                                                         
+                                <div class="form-group col-sm-6" id="groupdireccion">
+                                    <label for="password">Direccion</label>
+                                    <input type="text" class="form-control" id="direccion_sign" autofocus="autofocus" placeholder="Dirección">
+                                </div>
+                                <div class="form-group">
+                                    <input type="hidden" value="registroAdmin" id="personasAction"/>                       
+                                    <button type="submit" class="btn btn-primary" id="enviar" onclick="registro()">Guardar</button>
+                                    <button type="reset" class="btn btn-danger" id="cancelar" onclick="limpiarForm()" data-dismiss="modal">Cancelar</button>
+                                </div>
+                                <div class="form-group" >
+                                    <div class="alert alert-success hiddenDiv" id="mesajeResult">
+                                        <strong class="mesajeResultNeg">Info!</strong> 
+                                        <span class="mesajeResultText">Este cuadro de alerta podría indicar un cambio informativo neutro o una acción.</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
+        <!-- ********************************************************** -->
+        <!-- MODAL INGRESO LOGIN -->
+        <!-- ********************************************************** -->
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModalIngreso" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <form class="form-horizontal" role="form" id="formLogin">
+                            <div class="modal-header fondoForm">
+                                <button class="close btn-danger" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+                                <h2 class="text-center colorBlanco modal-title"><b>Login</b></h2>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <img src="../Imágenes/Inicio/user-login-man-person-512.png" alt="" class="userIngreso"/>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">   
+                                    <div class="col-sm-2"></div>
+                                    <div class="input-group form-group col-sm-8">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="text" id="usuario_login" class="form-control" placeholder="Nombre de Usuario">
+                                    </div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="input-group form-group col-sm-8">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="password_login" type="password" id="password_login" class="form-control" name="password" placeholder="Contraseña">
+                                    </div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                            </div>
+                            <div class="form-group login" >
+                                <button type="button" class="btn btn-primary" onclick="logueo()" data-dismiss="modal">Ingresar</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="limpiarForm()">Cancelar</button>
+                            </div>
+                            <div class="form-group" >
+                                <div class="alert alert-success " id="mesajeLogin">
+                                    <strong class="mesajeResultNeg">Info!</strong> 
+                                    <span class="mesajeResultText">Este cuadro de alerta podría indicar un cambio informativo neutro o una acción.</span>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ********************************************************** -->
         <!-- informacion -->
         <!-- ********************************************************** -->
