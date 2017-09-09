@@ -23,10 +23,10 @@ and open the template in the editor.
 
 #div_verde{
     position: relative; top: -20px;
-    background-color: #185B0E;
+    background-color: #2BC472;
     padding-left: 15px;
     padding-right: 15px;
-    height: 70px;
+    height: 70px;    
 }
 
 #encabezado h1{
@@ -39,10 +39,11 @@ and open the template in the editor.
 
 #div_verde h2{
     position: relative; right: -5%; top: 30%;
-    color: white;
     font-size: 3em;
     font-family: 'Satisfy', cursive;
     font-size: 35px;
+    font-family: fantasy;
+    color:#1E4356;
 }
 
 #encabezado img{
@@ -170,3 +171,16 @@ and open the template in the editor.
     position: relative; top:-350px; left: 50%;
     
 }
+
+.textoo{
+    width: 100%;
+    text-align: justify;
+    font-family: 'Tangerine', serif;
+    font-size: 20px;
+}
+
+#myModalRegistrooo{
+    text-align: center;
+    color: #3B38F8;
+}
+
