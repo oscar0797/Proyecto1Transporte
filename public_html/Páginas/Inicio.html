@@ -13,8 +13,8 @@
         <link href="../CSS/Estilos.css" rel="stylesheet" type="text/css"/>
         <link href="../CSS/datetimepicker.min.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body class="bg-muted">
-
+    <body  id="imagenFondo">
+        
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-ex1-collapse img-responsive">
                     <ul class="nav navbar-nav">                        
-                        <li class="active"><a href="Inicio.html" class="btn-lg glyphicon glyphicon-home"><b>_Inicio</b></a></li>
+                        <li class="active"><a href="Inicio.html" class="btn-lg glyphicon glyphicon"><b>_Inicio</b></a></li>
                         <li><a class=" btn-lg glyphicon" href="QuienesSomos.html">Quiénes Somos</a></li>
                         <li><a class="btn-lg glyphicon" href="Contacto.html">Contacto</a></li>
                     </ul>
@@ -160,7 +160,18 @@
                                             <span class="glyphicon glyphicon-calendar"></span>
                                         </span>
                                     </div>
-                                </div>                                                                         
+                                </div> 
+                                <!--ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd-->
+                                <div class="form-group col-sm-3" id="groupfechaNacimiento">
+                                        <label for="nac">Fecha Nac:</label>
+                                        <div id="dpFechaNacimiento" class="input-group date form_date" data-date="" data-date-format="dd/mm/yyyy" data-link-field="dtp_input2" data-link-format="dd/mm/yyyy">
+                                            <input class="form-control" type="text" value="" readonly placeholder="dd/mm/aaaa" id="fechaNac">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                 <!--ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd-->
                                 <div class="form-group col-sm-6" id="groupdireccion">
                                     <label for="password">Direccion</label>
                                     <input type="text" class="form-control" id="direccion_sign" autofocus="autofocus" placeholder="Dirección">
@@ -235,6 +246,21 @@
                 </div>
             </div>
         </div>
+          <!-- ********************************************************** -->
+        <!-- Vienvenida -->
+        <!-- ********************************************************** -->
+        <div>
+            <h1 id="bienvenida">BIENVENIDO</h1>
+            <br></br>
+            <div id="mensajeBienvenida">
+            <p>Bienvenid@ a Trans~Por~Tico, la agencia de viajes número uno en transporte público y privado.
+               Nuestra compañía realiza grandes esfuerzos día tras día, para brindar un excelente servicio, 
+               aplicando tarifas sumamente bajas, con el fin de favorecer a nuestros clientes.                
+               Tenga el gusto de contactarnos, no dude en escribirnos o en llamarnos, ya que contamos con servicio de transporte disponible 24/7. 
+               Para nosotros es un placer atenderle.</p>
+            </div>
+        </div>
+        <br></br>
         <!-- ********************************************************** -->
         <!-- INFO COUNTRIES -->
         <!-- ********************************************************** -->
@@ -278,10 +304,8 @@
         <br></br>
         <footer>
             <div class="container-fluid">
-                <div class="bg-warning col-xs-12 col-sm-12 col-md-12 col-lg-12 responsive">
-                    <h5><b>Autores:</b> Oscar Carmona, Greivin Rojas y Justin Vega </h5>
-                    <h5><b>Email_1:</b>ticotransporte@gmail.com </h5>
-                    <h5><b>Email_2:</b>viaje.trans.tico@gmail.com </h5>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 responsive">
+                    <h5><b>Autores:</b> Oscar Carmona, Greivin Rojas y Justin Vega </h5>                    
                     <h5><b>Año:</b> 2017</h5>
                     <h5><b>Todos los derechos reservados</b></h5>                      
                 </div>               

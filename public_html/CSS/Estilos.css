@@ -110,8 +110,8 @@ and open the template in the editor.
 
 #contenedorLugares{
     font-family: fantasy;
-    margin-left: 5%;
-    color:#345CEF;
+    margin-left: 6%;
+    color: whitesmoke;
 }
 
 #contenedorLugares li{
@@ -127,6 +127,7 @@ and open the template in the editor.
 #contenedorLugares a{
     color:#185B0E;
     text-decoration:none;
+    text-align: center;
 }
 
 #contenedorLugares img{
@@ -152,24 +153,26 @@ and open the template in the editor.
     margin-right:auto;
     height: 200px;
     width: 300px;
-    
+
 }
 
 /* ***********************************************Contacto******************************************* */
 .oficinas{
     position: relative; top:0; left:19%; 
-    color:#345CEF;
+    color:whitesmoke;
     width: 100px;
     font-family: fantasy;
+    font-size: 30px;
 }
-  .mapa{
+.mapa{
     margin-left: 5%;
 }
 .contacto{
     width:400px;
     height:0;
-    position: relative; top:-350px; left: 50%;
-    
+    position: relative; top:-400px; left: 50%;
+    color:whitesmoke;
+    font-size: 18px;
 }
 
 .textoo{
@@ -177,10 +180,47 @@ and open the template in the editor.
     text-align: justify;
     font-family: 'Tangerine', serif;
     font-size: 20px;
+    color: white;
 }
 
 #myModalRegistrooo{
     text-align: center;
     color: #3B38F8;
 }
+#imagenFondo{
 
+    background-image: url(../Imágenes/Fondos/fondoInicio.jpg);
+    background-position: center center;	  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#contactoFondo{
+
+    background-image: url(../Imágenes/Fondos/fondoContacto.jpg);
+    background-position: center center;	  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+footer{
+    background-image: url(../Imágenes/Fondos/fondopie.png);
+    background-position: center center;	  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: gray;
+}
+#bienvenida{
+    color: whitesmoke;
+    font-family: fantasy;
+    text-align: center;
+}
+#mensajeBienvenida{
+    color: whitesmoke;
+    font-family: 'Satisfy';
+    text-align: justify;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
